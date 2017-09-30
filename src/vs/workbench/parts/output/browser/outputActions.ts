@@ -45,7 +45,6 @@ export class ClearOutputAction extends Action {
 
 	public run(): TPromise<boolean> {
 		this.outputService.getActiveChannel().clear();
-		this.panelService.getActivePanel().focus();
 
 		return TPromise.as(true);
 	}
